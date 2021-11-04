@@ -1,7 +1,38 @@
 // TODO: Declare any global variables we need
+let heads = 0
+let tails = 0
+let percentageHeads = 0
+let percentageTails = 0
+let totalFlips = heads + tails
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    
+    console.log('Hi')
+
+    let button = document.querySelector('#flip')
+    button.addEventListener('click', function(){
+        document.getElementById('message').textContent = 'You Flipped Heads'   
+        let coinHeads = math.random() < 0.5
+        if (coinHeads){
+            heads++
+            toalFlips++
+
+        }
+})
+
+    let clear = document.querySelector ('#clear')
+        clear.addEventListener('click', function(){
+            clear.textContent = 'it worked too'
+    }
 
 
-document.addEventListener('DOMContentLoaded', function () {
+
+
+    
+    
+    
+
     // This is just a sanity check to make sure your JavaScript script is getting loaded
     // You can remove it once you see it in your browser console in the developer tools
     console.log('Hi')
